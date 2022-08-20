@@ -4,7 +4,7 @@ import { MovieContext } from "./MovieContext";
 
 
 const Nav = () =>{
-    const movies = useContext(MovieContext);
+    const [movies,setMovies] = useContext(MovieContext);
     return(
         <div className="nav">
             <h3>Dev Ed</h3>

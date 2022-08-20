@@ -1,9 +1,9 @@
 import React from "react";
 
-const Movie  = ({name, id}) =>{
+const Movie  = ({name, id,theme}) =>{
 return(
 <div className ="Movie">
-    <h3>{id}.{name}</h3>
+    <h3>{id}.{name}.{theme}</h3>
 </div>
 )
 }

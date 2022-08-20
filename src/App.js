@@ -3,6 +3,8 @@ import './App.css';
 import MoviesList from './MoviesList';
 import Nav from './Nav';
 import { MovieProvider } from './MovieContext';
+import TestSchedule from "./NodeCron";
+import AddMovie from './AddMovie';
 
 
 export default class App extends React.Component {
@@ -12,7 +14,9 @@ export default class App extends React.Component {
       <MovieProvider>
           <div className="App">
             <Nav/>
+            <AddMovie/>
             <MoviesList/>
+            <TestSchedule/>
           </div>
       </MovieProvider>
     );
